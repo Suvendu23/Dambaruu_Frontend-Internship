@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight - Dine Under the Stars</title>
+    <link rel="stylesheet" href="Restaurent.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="stars"></div>
+    <header>
+        <h1>Moonlight</h1>
+        <p class="tagline">Dine under the stars, shine with delight.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Food Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-section">
+                <h2>Welcome to Moonlight</h2>
+                <p>Experience the finest dining under a starry night.</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div id="menu-time">Current Menu: <span id="current-menu">Loading...</span></div>
+            <div id="menu-container">
+                <!-- Dynamic Menu will be inserted here -->
+            </div>
+            <button id="load-menu">View Menu</button>
+        </section>
+
+        <section id="about">
+            <h2>Our Story</h2>
+            <p>**The Story of Moonlight**
+
+                Moonlight was born from a passion for celestial beauty and exquisite cuisine.<br>
+                 Inspired by the serene glow of the moon and the vibrant flavors of India,<br>
+                  Moonlight aims to blend the magic of the night sky with unforgettable dining experiences.<br>
+                   The journey began with a simple dream: to craft a space where flavors and ambiance harmonize like day and night. 
+                
+                Countless hours of creativity, love, and hard work went into every detail, from the uniquely curated day and night menus to the delicate ambiance that mirrors the moon’s changing phases.<br>
+                 Whether you visit us under the sun or beneath the stars, Moonlight invites you to taste the essence of elegance and culinary mastery.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Moonlight. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+        </div>
+    </footer>
+
+    <div id="nutrition-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Nutrition Information</h3>
+            <p id="nutrition-info"></p>
+        </div>
+    </div>
+
+    <script src="Restaurent.js"></script>
+</body>
+</html>

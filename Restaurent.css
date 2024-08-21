@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: #f0f0f0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Starry Background */
+#stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #00274d;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff69b4;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #f0f0f0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to bottom right, #00274d, #013e7d);
+    color: #ff69b4;
+    border-radius: 10px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px;
+    background-color: #013e7d;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+#menu-time {
+    font-size: 1.3rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+#menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #00274d;
+    padding: 20px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.menu-item .star-rating {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+#load-menu {
+    background-color: #ff69b4;
+    color: #00274d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#load-menu:hover {
+    background-color: #ff85c4;
+}
+
+/* About and Contact Sections */
+#about, #contact {
+    background-color: #013e7d;
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact form button {
+    background-color: #ff69b4;
+    color: #00274d;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #ff85c4;
+}
+
+/* Nutrition Popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.popup-content {
+    background-color: #013e7d;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ff69b4;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #ff69b4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00274d;
+    color: #f0f0f0;
+    margin-top: 50px;
+}
+
+.social-links a {
+    color: #ff69b4;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        padding: 40px;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    #menu-container {
+        grid-template-columns: 1fr;
+    }
+}
