@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown</title>
+    <link rel="stylesheet" href="eventcountdown.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Set Your Event Countdown</h1>
+            <form id="eventForm">
+                <input type="text" id="eventName" placeholder="Event Name" required>
+                <input type="datetime-local" id="eventDate" required>
+                <input type="number" id="notifyDays" placeholder="Days before to notify" required>
+                <button type="submit">Set Countdown</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <h2 id="eventTitle">Countdown to Your Event</h2>
+            <div id="countdown">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="eventcountdown.js"></script>
+</body>
+</html>
