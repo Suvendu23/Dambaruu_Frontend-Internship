@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="surname" placeholder="Surname" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="male" required> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required> Female
+                </label>
+            </div>
+            
+            <select id="country" required>
+                <option value="">Select a country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="Russia">Russia</option>
+            </select>
+            
+            <label>
+                <input type="checkbox" id="terms" required> I accept terms and conditions
+            </label>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div id="dataTable" style="display: none;">
+        <h2>Registered Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="Form.js"></script>
+</body>
+</html>
